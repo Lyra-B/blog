@@ -1,0 +1,17 @@
+= flash[:notice]
+
+- if @post
+  .main-post-container
+    .main-post
+      .post-title
+        %p #{@post.title}
+      .post-content
+        %p #{@post.body}
+
+- if @posts
+  %ul.older-posts-list
+    - @posts.each do |p|
+      %li #{p.title}
+
+
+
