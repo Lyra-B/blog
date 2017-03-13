@@ -41,6 +41,8 @@ group :development, :test do
   gem 'simplecov', :require => false
   gem 'pry'
   gem 'pry-byebug'
+  gem 'rails-controller-testing'
+  gem 'database_cleaner'
 end
 
 group :development do
